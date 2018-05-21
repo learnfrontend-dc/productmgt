@@ -1,0 +1,1 @@
+export {ProductHeaderModule} from './app/app.module';
