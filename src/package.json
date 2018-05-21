@@ -2,7 +2,6 @@
   "name": "product-header",
   "author":"learnfrontend dc",
   "version": "0.0.1",
-  "private": true,
-  "license": "MIT",
+   "license": "MIT",
   "module" : "product-header.js"
 }

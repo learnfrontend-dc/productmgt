@@ -1,10 +1,14 @@
-# Web Components with Angular 6 Elements
+# Angular 6 Elements To Create MicroFront End Application
 
-Built from a default Angular CLI setup
+Default Angular CLI build
 
-Commands:
+* `npm run build` build the header component
+* `node server` to run a standalone header application
 
-* `npm run build && npm run package-elements` to create a build of a sample component
-* `npm run serve` to run a http-server with example usage (click the button, watch the devtools console)
+Build and publish reusable module like any other Angular module
 
-Read the complete walkthrough in the article: [Building Web Components with Angular Elements!](https://medium.com/@tomsu/building-web-components-with-angular-elements-746cd2a38d5b)
+* `./build.sh` to create reusable package
+* `npm publish` publish the package to npm
+
+Building MicroFront End Application using Angular Elements/Web Components
+Read the complete walkthrough in the article: 
