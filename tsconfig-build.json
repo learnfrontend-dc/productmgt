@@ -1,0 +1,30 @@
+{
+   
+  "angularCompilerOptions": {
+    "strictMetadataEmit": true
+  },
+    "compilerOptions": {
+      "baseUrl": "./tmp/src-inlined",
+      "outDir": "./dist",
+      "declaration": true,
+      "moduleResolution": "node",
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata":true,
+      "stripInternal" : true,
+      "rootDir":"./tmp/src-inlined",
+      "target": "es5",
+      "module": "es2015",
+      
+      "lib": [
+        "es2017",
+        "dom"
+      ],
+      "types" :[]
+    },
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts",
+        "e2e"
+      ], "files" : ["./tmp/src-inlined/index.ts"]
+  }
+  

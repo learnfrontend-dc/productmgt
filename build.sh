@@ -1,12 +1,11 @@
 rm -rf dist
 rm -rf build
+rm -rf tmp
 
-NGC="node node_modules/.bin/ngc"
 
-ROLLUP="node node_modules/.bin/rollup"
-
-$NGC -p ./src/tsconfig-build.json
-$ROLLUP build/product-header.js -o dist/product-header.js -f umd --name "product-header"
+npm run build:esm
+node node_modules/.bin/ngc -p ./tsconfig-build.json
+node node_modules/.bin/rollup -c
 
 rsync -a --exclude=*.js build/ dist
 cp src/package.json dist/package.json

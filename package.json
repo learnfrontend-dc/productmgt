@@ -10,7 +10,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build --prod --output-hashing=none"
+    "postinstall": "ng build --prod --output-hashing=none",
+    "build:esm": "gulp inline-templates"
   },
   "private": true,
   "dependencies": {
