@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "product-header": {
+    "productmgt": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/product-header",
+            "outputPath": "dist/productmgt",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -50,18 +50,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "product-header:build"
+            "browserTarget": "productmgt:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "product-header:build:production"
+              "browserTarget": "productmgt:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "product-header:build"
+            "browserTarget": "productmgt:build"
           }
         },
         "test": {
@@ -85,7 +85,7 @@
         }
       }
     },
-    "product-header-e2e": {
+    "productmgt-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -93,7 +93,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "product-header:serve"
+            "devServerTarget": "productmgt:serve"
           }
         },
         "lint": {
@@ -106,5 +106,5 @@
       }
     }
   },
-  "defaultProject": "product-header"
+  "defaultProject": "productmgt"
 }
