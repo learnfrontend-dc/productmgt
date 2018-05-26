@@ -1,19 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, Injector } from '@angular/core';
-import { createCustomElement } from '@angular/elements';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
-import { ProductHeaderComponent } from './productheader/productheaer.component';
+import { AppComponent } from './app.component';
+
+import { ProductHeaderModule } from 'phmf1/app/app.module';
+import { ProductViewModule } from 'pvmf2/app/app.module';
+import {ProductCartModule} from 'pcmf3/app/app.module';
 
 @NgModule({
-  declarations: [ProductHeaderComponent],
-  imports: [BrowserModule],
-  entryComponents: [ProductHeaderComponent]
+  declarations: [AppComponent],
+  imports: [BrowserModule,ProductHeaderModule,ProductViewModule,ProductCartModule],
+  providers: [],
+  bootstrap: [AppComponent],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
-export class ProductHeaderModule {
-  constructor(private injector: Injector) {
-    const productHeader = createCustomElement(ProductHeaderComponent, { injector });
-    customElements.define('product-header', productHeader);
-  }
-
-  ngDoBootstrap() {}
-}
+export class AppModule {}

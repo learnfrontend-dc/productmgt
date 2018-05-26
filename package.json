@@ -25,12 +25,16 @@
     "@angular/platform-browser": "^6.0.0",
     "@angular/platform-browser-dynamic": "^6.0.0",
     "@angular/router": "^6.0.0",
-    "core-js": "^2.5.4",
-    "rxjs": "^6.0.0",
-    "zone.js": "^0.8.26",
-    "document-register-element": "^1.7.2",
     "bootstrap": "3.3.7",
-    "ngx-bootstrap": "^1.8.1"
+    "classlist.js": "^1.1.20150312",
+    "core-js": "^2.5.4",
+    "document-register-element": "^1.7.2",
+    "ngx-bootstrap": "^1.8.1",
+    "pcmf3": "0.0.3",
+    "phmf1": "0.0.4",
+    "pvmf2": "0.0.3",
+    "rxjs": "^6.0.0",
+    "zone.js": "^0.8.26"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.6.0",
