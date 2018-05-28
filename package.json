@@ -30,7 +30,7 @@
     "core-js": "^2.5.4",
     "document-register-element": "^1.7.2",
     "ngx-bootstrap": "^1.8.1",
-    "mf-pc": "0.0.6",
+    "mf-pc": "0.0.7",
     "mf-ph": "0.0.1",
     "mf-pv": "0.0.1",
     "rxjs": "^6.0.0",
